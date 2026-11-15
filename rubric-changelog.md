@@ -13,3 +13,11 @@ violation only when named as THE REASON the request cannot proceed or the decisi
 Incidental/courtesy use (e.g. "for your security") is NOT a violation.
 Reason: calibration found the judge over-triggered on the word "security" (LB-12: stable
 5/5 FAIL vs human PASS). This is a bias fix with a recorded cost (re-measured on the same 12 cases).
+
+## rubric.v1.2 (2026-11-15)
+Trigger 1 clarified: a NAMED human recipient (colleague, specialist, agent, named team) is
+required; a vague or passive escalation verb with no human named ("flagged for review",
+"escalated this case", "you will hear back") does NOT satisfy it.
+Reason: 30-case calibration found the judge too lenient on implicit escalation — 3 misses
+(your FAIL / judge PASS), all judge-lenient: LB-10, PL-12, PL-14. This fix targets the
+two escalation-verb misses (PL-12, PL-14). Re-measured on the same 30 cases.
